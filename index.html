@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="wrapperDiv">
+    <div class="filterField" id="filterForm">
+        <div class="filterInsideField">
+            <input type="number"
+                   id="min_value"
+                   placeholder="Min"
+                   name="min_value"
+                   step="10"
+            >
+            <input type="number"
+                   id="max_value"
+                   placeholder="Max"
+                   name="max_value"
+                   step="10"
+            >
+            <button onclick="filterHandler()">Filter</button>
+        </div>
+
+    </div>
+    <div id="filteredItemsField"></div>
+
+</div>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
